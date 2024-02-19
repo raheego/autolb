@@ -40,7 +40,23 @@ chrome 브라우저에서 http://aws.google.com:9889/
 
 127.0.0.1 aws.google.com
 
-### chk
+## chk
 compose.yml 고치고 적용하기 위해
 
 $ sudo docker compose -f compose.yml up -d --build --force-recreate
+
+### nGrinder실행
+```
+$ pwd /home/jsmin630/app/ng/ngrinder-agent 
+$ ./run_agent.sh
+```
+ 이걸 먼저 실행하고
+
+
+```
+$ pwd /home/jsmin630/app/ng/controller 
+$ java -jar ngrinder-controller-3.5.8.war
+```
+이걸 실행하신 다음에
+
+http://localhost:8080/ 접속하시면 됩니다. ngrinder
