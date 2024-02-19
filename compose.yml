@@ -12,7 +12,7 @@ services:
 
   blog:
     # build: ../../docker_file/httpd
-    image: raheego/gitblog:0.1.0
+    image: soominjeong/gitblog:0.1.0
     deploy:
       mode: replicated
       replicas: 2 # https://docs.docker.com/compose/compose-file/deploy/#replicas
